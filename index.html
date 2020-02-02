@@ -24,9 +24,8 @@
 
 <body>
   <!---------------------Nav bar----------------->
-  <nav class="navbar navbar-expand-sm fixed-top navbar-light"
-    style="transition: top 0.3s; /* Transition effect when sliding down (and up) */" id="navbar">
-    <a class="navbar-brand" href="#">
+  <nav class="navbar navbar-expand-sm fixed-top navbar-light" id="navbar">
+    <a class="navbar-brand p-0 m-0" href="#">
       <span class="logo-text">
         Nilakshi
       </span>
@@ -43,20 +42,13 @@
           <a class="nav-link" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="gallery.html">Profile</a>
+          <a class="nav-link" href="gallery.html">Gallery</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Tour</a>
+          <a class="nav-link" href="about.html">About</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-            Family sites
-          </a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="https://www.bighitcorp.com">Bighit Entertainment</a>
-            <a class="dropdown-item" href="https://www.txt.ibighit.com">TXT</a>
-            <a class="dropdown-item" href="https://www.bighitaudition.com">Bighit Audition</a>
-          </div>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
         </li>
       </ul>
     </div>
@@ -155,16 +147,16 @@
   </footer>
 </body>
 <script>
-  /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+  /* When the user scrolls increase the background opacity */
   var prevScrollpos = window.pageYOffset;
   window.onscroll = function () {
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-      document.getElementById("navbar").style.top = "0";
-    } else {
-      document.getElementById("navbar").style.top = "-90px";
+    var scrollTop = $(this).scrollTop();
+    if (scrollTop <= 90) {
+      document.getElementById("navbar").style.backgroundColor = "rgba(255, 255, 255,"+ (0.8 - (90 - scrollTop) / 90)+")";
     }
-    prevScrollpos = currentScrollPos;
+    else{
+      document.getElementById("navbar").style.backgroundColor = "rgba(255, 255, 255,0.8)";
+    }
   }
 </script>
 
