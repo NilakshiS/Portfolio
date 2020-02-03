@@ -1,13 +1,9 @@
 https://nilakshis.github.io/Portfolio/
-# Bootstrap4Website
-This is a simple webpage built using the boilerplate v7.2.0 template and bootstrap v4.3. It has the following features:
-- Gradient text background on hover on links
-- Carousel
-- Responsive Cards
-- Parallax Effect on a full size image
-- Modal
-- Icons
-- Footer
+# Portfolio Website
+This is a simple Portfolio website built using the boilerplate v7.2.0 template and bootstrap v4.3. It contains the following pages:
+- Home
+- About
+- Gallery
+- Contact
 
-This Webpage was made just for an example and was not made to infringe on the copyrights of Big Hit Entertainment&copy; or BTS&copy;. All content, icons, logos and images belong to their respective owners.
 Coded by Nilakshi Sahai
