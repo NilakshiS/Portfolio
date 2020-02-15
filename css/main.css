@@ -305,12 +305,10 @@ text-shadow: 0px 2px 5px gray;
 color: white
 }
 
-.intro-image {
+.background-cover-image {
 	position:relative;
   overflow:hidden;
   min-height:200px;
-	background:url(../img/main-img.jpg) no-repeat 50% 20%;
-	background-size:cover;
 }
 
 .carousel-caption h2 {
