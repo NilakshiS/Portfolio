@@ -411,26 +411,28 @@ color: white
   box-shadow: 2px 1px 1px rgba(0,0,0,0.15);
 }
 
-.paper::before,
-.paper::after {
+/* Second sheet of paper */
+.paper::before {
   content: "";
   position: absolute;
   width: 100%;
   height: 100%;
-  background:url(../img/main-img.jpg) no-repeat 50% 20%;
+  background:url(../img/art_1.jpg) no-repeat 50% 20%;
   background-size: contain;
-}
-
-/* Second sheet of paper */
-.paper::before {
-  left: 7px;
-  top: 5px;
+  left: 17px;
+  top: 15px;
   z-index: -1;
 }
 
 /* Third sheet of paper */
 .paper::after {
-  left: 12px;
-  top: 10px;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background:url(../img/art_6.jpg) no-repeat 50% 20%;
+  background-size: contain;
+  left: 22px;
+  top: 20px;
   z-index: -2;
 }
