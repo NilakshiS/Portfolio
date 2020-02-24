@@ -277,6 +277,16 @@ textarea {
 #########################################################
 *
 */
+.about-image{
+  top:5%;
+}
+
+@media (min-width: 768px) {
+  .about-image{
+    top:5%;
+    left: 5%;
+  }  
+ }
 
 .bg-primary{
   background-color: #ffea00!important;
