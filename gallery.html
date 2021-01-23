@@ -21,6 +21,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <link rel="manifest" href="./site.webmanifest">
+  <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#00aba9">
+  <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
@@ -28,7 +35,7 @@
   <nav class="navbar navbar-expand-sm fixed-top navbar-light" id="navbar">
     <a class="navbar-brand p-0 m-0" href="index.html">
       <span class="logo-text">
-        Nilakshi
+        <img src="font - white.svg" class="brand-N-logo">ilakshi
       </span>
     </a>
     <!---------------------Toggle button for small displays----------------->
@@ -177,10 +184,19 @@
   window.onscroll = function () {
     var scrollTop = $(this).scrollTop();
     if (scrollTop <= 90) {
-      document.getElementById("navbar").style.backgroundColor = "rgba(255,255,255,"+ (0.8 - (90 - scrollTop) / 90)+")";
+      var x = document.getElementsByClassName("nav-link");
+      for (i = 0; i < x.length; i++) {
+         x[i].style.color = "rgba(" + (97 + parseInt(scrollTop) ) + ","+ (97 + parseInt(scrollTop) ) + ","+ (97 + parseInt(scrollTop) ) + ")";
+      }
+      document.getElementById("navbar").style.backgroundColor = "rgba(0, 0, 0," + (0.3 - (90 - scrollTop) / 90) + ")";
     }
-    else{
-      document.getElementById("navbar").style.backgroundColor = "rgba(255,255,255,0.8)";
+    else {
+      var x = document.getElementsByClassName("nav-link");
+      for (i = 0; i < x.length; i++) {
+        
+         x[i].style.color = "rgba(255, 255, 255, 1)";
+      }
+      document.getElementById("navbar").style.backgroundColor = "rgba(0, 0, 0,0.3)";
     }
   }
 </script>

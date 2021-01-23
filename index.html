@@ -20,14 +20,21 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-</head>
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <link rel="manifest" href="./site.webmanifest">
+  <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#00aba9">
+  <meta name="theme-color" content="#ffffff">
 
+</head>
 <body>
   <!---------------------Nav bar----------------->
   <nav class="navbar navbar-expand-sm fixed-top navbar-light" id="navbar">
     <a class="navbar-brand p-0 m-0" href="#">
       <span class="logo-text">
-        Nilakshi
+        <img src="font - white.svg" class="brand-N-logo">ilakshi
       </span>
     </a>
     <!---------------------Toggle button for small displays----------------->
@@ -39,7 +46,7 @@
     <div class="collapse navbar-collapse float-md-right" id="collapsibleNavbar">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" href="#" >Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="gallery.html">Gallery</a>
@@ -57,47 +64,102 @@
   <!---------------------------------Intro Content-------------------------------------->
   <section>
     <div class="row no-gutters">
-      <div class="col-12 col-sm-7 background-cover-image" style="background:url(img/main-img.jpg) no-repeat 50% 20%;
-      background-size:cover;"></div>
-      <div class="col m-5 py-5" style="font-size: 1.5rem;">
-        Hi! I am <span style="font-size: 1.7rem;">Nilakshi!</span>
+      <div class="col-12 col-sm-7 col-md-6 col-lg-5 image-parent">
+        <img src="img/about-img.jpg" class="img-fluid image-child">
+      </div>
+      <div class="col mx-4 mt-sm-5 py-4 py-sm-5 intro-heading">
+        Hi! I am <span class="intro-heading-name">Nilakshi!</span>
         <br>A developer by profession and a designer by passion.
-        <div style="font-size: 1.2rem;">
-        <br>I am passionate about bridging the gap between code and design and making 
-        applications that are intuitive for the users and finding more ways
-        to create a natural interaction between humans and machines.
+        <div class="intro-text">
+          <br>I am passionate about bridging the gap between code and design. Making
+          applications that are intuitive for the users and finding more ways
+          to create a natural interaction between humans and machines is what drives me.
         </div>
       </div>
+    </div>
   </section>
 
   <!---------------------------------My Work Intro Content-------------------------------------->
   <section>
-    <div class="row no-gutters bg-primary my-5">
+    <div class="row no-gutters bg-primary">
       <div class="col-12 col-sm-7 p-5">
-        <h1 class="display-4">My Work</h1>
-        My work has primarily been in the area of coding; websites, mobile applications, IoT systems
-        etc. due to the nature of my degree and my profession, that's why I don't have many UX based projects.
-        However, I have tried to incorporate the principles of UX into a few of my projects, trying user research,
-        wireframing, prototyping etc. I am planning to undertake more projects to get more experience in this
-        field, so stay tuned for more stuff!
+        <h1 class="display-5">My Work</h1>
+        <p class="m-0 mb-1 p-0">My work has primarily been in the area of coding; websites, mobile applications, IoT
+          systems
+          etc. due to the nature of my degree and my profession. I have worked extensively in developing
+          web and mobile applications keeping the needs of my client and the user in mind.</p>
+        <p class="m-0 mb-1 p-0">
+          Being a full stack developer with an interest in how my apps can benefit the users, I have been involved in
+          almost every part of the process: research, ideation,coding, testing, deployment etc.
+        </p>
+        <p class="m-0 p-0">I have tried to incorporate the principles of UX and design as much as possible into my
+          projects
+          so that I can deliver the best for my client however, with a continuously evolving field like UX
+          with new insights and methods being discovered everyday there's something new to learn always</p>
+
       </div>
       <div class="col-sm-5 background-cover-image" style="background:url(img/code.jpg) no-repeat 50% 20%;
       background-size:cover;"></div>
     </div>
+
+    <!------------------------Card deck-------------------------->
+    <div class="card-deck m-5">
+      <div class="card bg-dark text-white">
+      <img class="card-img" src="img/streetlight.jpg" alt="Card image">
+        <div class="card-img-overlay">
+          <div class="card-body">
+            <h5 class="card-title">Streetlight Automation System</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+          <div class="card-footer">
+            <a href="streetlight-system.html" class="btn bg-primary">Know More</a>
+          </div>
+        </div>
+        </div>
+      <div class="card bg-dark text-white">
+        <img class="card-img" src="img/streetlight.jpg" alt="Card image">
+        <div class="card-img-overlay">
+          <div class="card-body">
+            <h5 class="card-title">Streetlight Automation System</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+          <div class="card-footer">
+            <a href="streetlight-system.html" class="btn bg-primary">Know More</a>
+          </div>
+        </div>
+      </div>
+      <div class="card bg-dark text-white">
+        <img class="card-img" src="img/streetlight.jpg" alt="Card image">
+        <div class="card-img-overlay display-hover">
+          <div class="card-body">
+            <h5 class="card-title">Streetlight Automation System</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+          <div class="card-footer">
+            <a href="streetlight-system.html" class="btn bg-primary">Know More</a>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="row no-gutters">
-      <div class="col-12 col-sm-4 py-3">
-        <img src="img/album-1.png" alt="..." class="rounded-circle" style="margin-left:auto; margin-right:auto;display:block;height: 250px; width:250px;">
+      <div class="col-12 col-sm-4">
+        <img src="img/streetlight.jpg" alt="..." style="height: 100%; width: 100%;">
       </div>
       <div class="col-sm-8 p-5 bg-secondary">
-        While imparting a positive influence through activities such as the LOVE MYSELF campaign and the UN
-        ‘Speak Yourself’ speech, BTS has mobilized millions of fans across the world (named ARMY), topped prominent
-        music charts, sold out worldwide tours including stadiums and have been recognized with numerous prestigious
-        awards like the Billboard Music Awards and American Music Awards.
+        <h3>Streetlight Automation System</h3>
+        <p class="m-0 mb-1 p-0">
+          Streetlight Automation System is an IOT based solution to reduce manual intervention in
+          operating streetlights and provide better notification in case of minor faults.
+          The system comprises a hardware system using a node mcu board, attached to streetlights and
+          an accompanying mobile application which can be used for monitoring and notifications.
+        </p>
+        <button type="button" class="btn bg-primary">Read More</button>
       </div>
     </div>
     <div class="row no-gutters">
       <div class="col-12 col-sm-4 py-3">
-        <img src="img/album-2.png" alt="..." class="rounded-circle" style="margin-left:auto; margin-right:auto;display:block;height: 250px; width:250px;">
+        <img src="img/album-2.png" alt="..." class="rounded-circle"
+          style="margin-left:auto; margin-right:auto;display:block;height: 250px; width:250px;">
       </div>
       <div class="col-sm-8 p-5 bg-secondary">
         While imparting a positive influence through activities such as the LOVE MYSELF campaign and the UN
@@ -107,9 +169,9 @@
       </div>
     </div>
   </section>
-<!---------------------------------Miscellaneous/ Gallery-------------------------------------->
+  <!---------------------------------Miscellaneous/ Gallery-------------------------------------->
   <section>
-    <div class="row no-gutters bg-primary my-5">
+    <div class="row no-gutters bg-primary mb-4">
       <div class="col-12 col-sm-7 p-5">
         <h1 class="display-4">Misc</h1>
         Apart from my work, I have tried my hands in designing logos and banners. Also, I
@@ -153,13 +215,22 @@
   window.onscroll = function () {
     var scrollTop = $(this).scrollTop();
     if (scrollTop <= 90) {
-      document.getElementById("navbar").style.backgroundColor = "rgba(255, 255, 255,"+ (0.8 - (90 - scrollTop) / 90)+")";
+      var x = document.getElementsByClassName("nav-link");
+      for (i = 0; i < x.length; i++) {
+         x[i].style.color = "rgba(" + (97 + parseInt(scrollTop) ) + ","+ (97 + parseInt(scrollTop) ) + ","+ (97 + parseInt(scrollTop) ) + ")";
+      }
+      document.getElementById("navbar").style.backgroundColor = "rgba(0, 0, 0," + (0.3 - (90 - scrollTop) / 90) + ")";
     }
-    else{
-      document.getElementById("navbar").style.backgroundColor = "rgba(255, 255, 255,0.8)";
+    else {
+      var x = document.getElementsByClassName("nav-link");
+      for (i = 0; i < x.length; i++) {
+        
+         x[i].style.color = "rgba(255, 255, 255, 1)";
+      }
+      document.getElementById("navbar").style.backgroundColor = "rgba(0, 0, 0,0.3)";
     }
   }
 </script>
 
-  
+
 </html>
