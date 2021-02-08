@@ -29,6 +29,7 @@
   <meta name="theme-color" content="#ffffff">
 
 </head>
+
 <body>
   <!---------------------Nav bar----------------->
   <nav class="navbar navbar-expand-sm fixed-top navbar-light" id="navbar">
@@ -46,7 +47,7 @@
     <div class="collapse navbar-collapse float-md-right" id="collapsibleNavbar">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#" >Home</a>
+          <a class="nav-link" href="#">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="gallery.html">Gallery</a>
@@ -82,7 +83,7 @@
   <!---------------------------------My Work Intro Content-------------------------------------->
   <section>
     <div class="row no-gutters bg-primary">
-      <div class="col-12 col-sm-7 p-5">
+      <div class="col-12 col p-5">
         <h1 class="display-5">My Work</h1>
         <p class="m-0 mb-1 p-0">My work has primarily been in the area of coding; websites, mobile applications, IoT
           systems
@@ -90,82 +91,69 @@
           web and mobile applications keeping the needs of my client and the user in mind.</p>
         <p class="m-0 mb-1 p-0">
           Being a full stack developer with an interest in how my apps can benefit the users, I have been involved in
-          almost every part of the process: research, ideation,coding, testing, deployment etc.
+          almost every part of the process: research, ideation,coding, testing, deployment etc. Using the principles of
+          UX and design combined with the latest technology I strive to deliver the best.
         </p>
-        <p class="m-0 p-0">I have tried to incorporate the principles of UX and design as much as possible into my
-          projects
-          so that I can deliver the best for my client however, with a continuously evolving field like UX
-          with new insights and methods being discovered everyday there's something new to learn always</p>
+        <p class="m-0 p-0">
+          Technology is ever-evolving, where change is the only constant, however I'm not afraid of change, there's
+          something new to learn always and I'm open to new experiences. </p>
 
       </div>
-      <div class="col-sm-5 background-cover-image" style="background:url(img/code.jpg) no-repeat 50% 20%;
-      background-size:cover;"></div>
+      <!-- <div class="col-sm-5 background-cover-image" style="background:url(img/code.jpg) no-repeat 50% 20%;
+      background-size:cover;"></div> -->
     </div>
 
     <!------------------------Card deck-------------------------->
     <div class="card-deck m-5">
-      <div class="card bg-dark text-white">
-      <img class="card-img" src="img/streetlight.jpg" alt="Card image">
-        <div class="card-img-overlay">
+      <div class="card text-white">
+        <div class="bg-dark dark-screen"></div>
+        <img class="card-img my-card-image" src="img/streetlight_cropped.jpg" alt="Card image" id="hidethis">
+        <div class="card-img-overlay my-card-text" onmouseover="show(this,hidethis)" onmouseout="hide(this,hidethis)">
           <div class="card-body">
             <h5 class="card-title">Streetlight Automation System</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text">
+              An IOT based system that could detect
+              darkness and turn the streetlights on automatically, detect minor
+              faults, and provide a report in a mobile application
+            </p>
           </div>
-          <div class="card-footer">
-            <a href="streetlight-system.html" class="btn bg-primary">Know More</a>
+          <div class="card-footer" style="background: none; border:none;">
+            <a href="streetlight-system.html" class="button">Know More</a>
           </div>
         </div>
-        </div>
-      <div class="card bg-dark text-white">
-        <img class="card-img" src="img/streetlight.jpg" alt="Card image">
-        <div class="card-img-overlay">
+      </div>
+      <div class="card text-white" style="position: relative;">
+        <div class="bg-dark dark-screen"></div>
+        <img class="card-img my-card-image" src="img/ict-broadcast/ict_broadcast_logo.png" alt="Card image" id="hidethis2">
+        <div class="card-img-overlay my-card-text" onmouseover="show(this,hidethis2)" onmouseout="hide(this,hidethis2)">
           <div class="card-body">
-            <h5 class="card-title">Streetlight Automation System</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <h5 class="card-title">ICT Broadcast</h5>
+            <p class="card-text">
+              ICT Broadcast is a notice board like android application
+              using which students could get all the news and dates
+              regarding events and assignments in one place.
+            </p>
           </div>
-          <div class="card-footer">
-            <a href="streetlight-system.html" class="btn bg-primary">Know More</a>
+          <div class="card-footer" style="background: none; border:none;">
+            <a href="ict-broadcast.html" class="button">Know More</a>
           </div>
         </div>
       </div>
-      <div class="card bg-dark text-white">
-        <img class="card-img" src="img/streetlight.jpg" alt="Card image">
-        <div class="card-img-overlay display-hover">
+      <div class="card text-white">
+        <div class="bg-dark dark-screen"></div>
+        <img class="card-img my-card-image" src="img/gnu-pmms.png" alt="Card image" id="hidethis3">
+        <div class="card-img-overlay my-card-text" onmouseover="show(this,hidethis3)" onmouseout="hide(this,hidethis3)">
           <div class="card-body">
-            <h5 class="card-title">Streetlight Automation System</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <h5 class="card-title">GNU Project Management System</h5>
+            <p class="card-text">
+              GPMS is a Web app which helps in tracking the progress of various
+              projects in colleges and universities by the students and faculties.
+            </p>
           </div>
           <div class="card-footer">
-            <a href="streetlight-system.html" class="btn bg-primary">Know More</a>
+            <a href="gpms.html" class="button">Know More</a>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="row no-gutters">
-      <div class="col-12 col-sm-4">
-        <img src="img/streetlight.jpg" alt="..." style="height: 100%; width: 100%;">
-      </div>
-      <div class="col-sm-8 p-5 bg-secondary">
-        <h3>Streetlight Automation System</h3>
-        <p class="m-0 mb-1 p-0">
-          Streetlight Automation System is an IOT based solution to reduce manual intervention in
-          operating streetlights and provide better notification in case of minor faults.
-          The system comprises a hardware system using a node mcu board, attached to streetlights and
-          an accompanying mobile application which can be used for monitoring and notifications.
-        </p>
-        <button type="button" class="btn bg-primary">Read More</button>
-      </div>
-    </div>
-    <div class="row no-gutters">
-      <div class="col-12 col-sm-4 py-3">
-        <img src="img/album-2.png" alt="..." class="rounded-circle"
-          style="margin-left:auto; margin-right:auto;display:block;height: 250px; width:250px;">
-      </div>
-      <div class="col-sm-8 p-5 bg-secondary">
-        While imparting a positive influence through activities such as the LOVE MYSELF campaign and the UN
-        ‘Speak Yourself’ speech, BTS has mobilized millions of fans across the world (named ARMY), topped prominent
-        music charts, sold out worldwide tours including stadiums and have been recognized with numerous prestigious
-        awards like the Billboard Music Awards and American Music Awards.
       </div>
     </div>
   </section>
@@ -178,9 +166,10 @@
         spend my free time sketching and painting, check these out <a href="gallery.html">here</a>
         at my gallery.
         <br>
-        <br>Bonus: You can also find pictures of my cute dog here!
+        <br>
+        <!-- <br>Bonus: You can also find pictures of my cute dog here! -->
       </div>
-      <div class="col-sm-5 background-cover-image" style="background:url(img/art_6.jpg) no-repeat 50% 40%;
+      <div class="col-sm-5 background-cover-image" style="background:url(img/gallery/art_6.jpg) no-repeat 50% 40%;
       background-size:cover;"></div>
     </div>
   </section>
@@ -195,7 +184,7 @@
         <div class="col">
           <ul class="list-unstyled text-center">
             <li><a href="https://www.linkedin.com/in/nilakshi-sahai/">LinkedIn</a></li>
-            <li><a href="#" download="Nilakshi_Resume">Resume</a></li>
+            <li><a href="resources/resume.pdf" download="Nilakshi_Resume">Resume</a></li>
             <li><a href="https://www.instagram.com/eneelion">Art Account on Instagram</a></li>
           </ul>
         </div>
@@ -217,18 +206,27 @@
     if (scrollTop <= 90) {
       var x = document.getElementsByClassName("nav-link");
       for (i = 0; i < x.length; i++) {
-         x[i].style.color = "rgba(" + (97 + parseInt(scrollTop) ) + ","+ (97 + parseInt(scrollTop) ) + ","+ (97 + parseInt(scrollTop) ) + ")";
+        x[i].style.color = "rgba(" + (97 + parseInt(scrollTop)) + "," + (97 + parseInt(scrollTop)) + "," + (97 + parseInt(scrollTop)) + ")";
       }
       document.getElementById("navbar").style.backgroundColor = "rgba(0, 0, 0," + (0.3 - (90 - scrollTop) / 90) + ")";
     }
     else {
       var x = document.getElementsByClassName("nav-link");
       for (i = 0; i < x.length; i++) {
-        
-         x[i].style.color = "rgba(255, 255, 255, 1)";
+
+        x[i].style.color = "rgba(255, 255, 255, 1)";
       }
       document.getElementById("navbar").style.backgroundColor = "rgba(0, 0, 0,0.3)";
     }
+  }
+
+  function show(x, y) {
+    x.style.opacity = "1";
+    y.style.filter = "opacity(50%)";
+  }
+  function hide(x, y) {
+    x.style.opacity = "0"
+    y.style.filter = "opacity(100%)";
   }
 </script>
 
