@@ -289,8 +289,10 @@ textarea {
  }
 
 .bg-primary{
+  /* background-color: #e91e63!important; */
   background-color: #ffea00!important;
   /* background-color: #ff9100!important; */
+  /* background-color: #03A688!important; */
 }
 
 .bg-secondary{
