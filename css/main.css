@@ -507,7 +507,9 @@ color: white
 .intro-text{
   font-size: 1.2rem
 }
-
+.my-text{
+  font-size: 1.4rem;
+}
 
 
 /* Extra small devices (phones, 600px and down) */
@@ -587,7 +589,7 @@ color: white
 .button{
   padding: 10px;
   color: #222;
-  border-radius: 3px;
+  border-radius: 10px;
   text-decoration: none;
   background-color: #ffea00;
 }
@@ -596,6 +598,14 @@ color: white
   background-color: #ecca0a;
   color: #222;
   text-decoration: none;
+}
+
+.tags{
+  padding: 10px;
+  color: #fff;
+  border-radius: 20px;
+  text-decoration: none;
+  background-color: #6d6d6d;
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
