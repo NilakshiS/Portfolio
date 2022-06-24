@@ -306,6 +306,7 @@ textarea {
 
 body {
   font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
 }
 
 body, html {
@@ -314,13 +315,13 @@ body, html {
 
 .logo-text{
 font-family: 'Montez';
-font-size: 48px;
+font-size: 3rem;
 text-shadow: 0px 2px 5px gray;
 color: white
 }
 
 .brand-N-logo{
-  height: 56px;
+  height: 3.5rem;
   margin-right: 2px;
   vertical-align: sub; 
   filter: drop-shadow(0px 2px 5px grey);
@@ -511,8 +512,24 @@ color: white
   font-size: 1.4rem;
 }
 
+.tags{
+  padding: 10px;
+  color: #fff;
+  border-radius: 20px;
+  text-decoration: none;
+  background-color: #6d6d6d;
+  /* margin: 0.25rem; */
+}
 
-/* Extra small devices (phones, 600px and down) */
+.button{
+  padding: 10px;
+  color: #222;
+  border-radius: 10px;
+  text-decoration: none;
+  background-color: #ffea00;
+}
+
+/* Extra small devices (phones, 576px and down) */
 @media only screen and (max-width: 576px) {
   .intro-heading{
     font-size: 1.6rem;
@@ -523,9 +540,18 @@ color: white
   .intro-text{
     font-size: 1.3rem
   }
+  .my-text{
+    font-size: 1.3rem;
+  }
+  #navbar{
+    background-color: rgba(0, 0, 0,0.3);
+  }
+  .nav-link {
+    color: rgba(255, 255, 255, 1)!important;
+  }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Small devices (portrait tablets and large phones, 576px and up) */
 @media only screen and (min-width: 576px) {
   .intro-heading{
     font-size: 1.3rem;
@@ -568,6 +594,24 @@ color: white
   .intro-text{
     font-size: 2vw
   }
+  html{
+    font-size: 1.2vw;
+  }
+  .tags{
+    padding: 0.8vw;
+    color: #fff;
+    border-radius: 1.7vw;
+    text-decoration: none;
+    background-color: #6d6d6d;
+    /* margin-right: 0.7vw; */
+  }
+  .button{
+    padding: 0.8vw;
+    color: #222;
+    border-radius: 0.8vw;
+    text-decoration: none;
+    background-color: #ffea00;
+  }
 }
 .my-card-text{
   opacity: 0;
@@ -586,27 +630,19 @@ color: white
   height: 100%; 
   border-radius: 4px;
 }
-.button{
-  padding: 10px;
-  color: #222;
-  border-radius: 10px;
-  text-decoration: none;
-  background-color: #ffea00;
-}
+
 
 .button:hover{
   background-color: #ecca0a;
   color: #222;
   text-decoration: none;
 }
-
-.tags{
-  padding: 10px;
-  color: #fff;
-  border-radius: 20px;
-  text-decoration: none;
-  background-color: #6d6d6d;
+.tags-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
+
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 /* @media only screen and (min-width: 1200px) {
